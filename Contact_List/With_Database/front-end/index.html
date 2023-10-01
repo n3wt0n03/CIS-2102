@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CIS 2012 Contact List</title>
+  </head>
+
+  <body>
+    <header>
+      <center><h1>Contact List</h1></center>
+      <form id="new-contact-form" action="">
+        <input type="text" id="lastname-input" placeholder="Lastname" />
+        <input type="text" id="firstname-input" placeholder="Firstname" />
+        <input type="text" id="email-input" placeholder="Email" />
+        <input type="number" id="number-input" placeholder="Contact Number" />
+        <input
+          type="submit"
+          id="new-contact-submit"
+          value="Add contact"
+          onclick="addContact(event)"
+        />
+      </form>
+    </header>
+
+    <main>
+      <table id="contact-table">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Contact Number</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data will be inserted here dynamically -->
+        </tbody>
+      </table>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
