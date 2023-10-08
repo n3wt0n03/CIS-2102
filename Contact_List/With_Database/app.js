@@ -28,6 +28,7 @@ const pool = mysql.createPool({
   database: "contact_list",
 });
 
+//Get all data from the database
 app.get("/get-contacts", (req, res) => {
   pool.getConnection((err, connect) => {
     if (err) throw err;
@@ -46,6 +47,7 @@ app.get("/get-contacts", (req, res) => {
   });
 });
 
+//add all inputs unto the database
 app.post("/add-contact", (req, res) => {
   pool.getConnection((err, connect) => {
     if (err) throw err;

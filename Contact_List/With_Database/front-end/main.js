@@ -178,7 +178,6 @@ function startContactEdit(conID) {
 }
 
 // Function to save the edited contact data
-// Function to save the edited contact data
 function saveContact(conID) {
   if (editMode[conID]) {
     // Get the edited values from input fields
