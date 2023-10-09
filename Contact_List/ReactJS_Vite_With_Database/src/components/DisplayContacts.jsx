@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { updateContact } from "./functions/EditContact";
-import { deleteContact } from "./functions/DeleteContact"; 
+import { deleteContact } from "./functions/DeleteContact";
+import './styles.css' 
 
 const DisplayContacts = ({ contacts, fetchContacts, setContacts }) => {
     useEffect(() => {
@@ -66,6 +67,7 @@ const DisplayContacts = ({ contacts, fetchContacts, setContacts }) => {
             <th>Firstname</th>
             <th>Email</th>
             <th>Contact Number</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -74,6 +76,7 @@ const DisplayContacts = ({ contacts, fetchContacts, setContacts }) => {
               <td>{editMode === index ? (
                 <input
                   type="text"
+                  id = "lastname-input"
                   value={editedContact.lastName}
                   onChange={(e) => setEditedContact({ ...editedContact, lastName: e.target.value })}
                 />
@@ -81,6 +84,7 @@ const DisplayContacts = ({ contacts, fetchContacts, setContacts }) => {
               <td>{editMode === index ? (
                 <input
                   type="text"
+                  id = "firstname-input"
                   value={editedContact.firstName}
                   onChange={(e) => setEditedContact({ ...editedContact, firstName: e.target.value })}
                 />
@@ -88,6 +92,7 @@ const DisplayContacts = ({ contacts, fetchContacts, setContacts }) => {
               <td>{editMode === index ? (
                 <input
                   type="text"
+                  id = "email-input"
                   value={editedContact.email}
                   onChange={(e) => setEditedContact({ ...editedContact, email: e.target.value })}
                 />
@@ -95,6 +100,7 @@ const DisplayContacts = ({ contacts, fetchContacts, setContacts }) => {
               <td>{editMode === index ? (
                 <input
                   type="text"
+                  id = "number-input"
                   value={editedContact.number}
                   onChange={(e) => setEditedContact({ ...editedContact, number: e.target.value })}
                 />
@@ -105,8 +111,8 @@ const DisplayContacts = ({ contacts, fetchContacts, setContacts }) => {
                 ) : (
                   <button onClick={() => handleEdit(index, contact)}>EDIT</button>
                 )}
+                <button id="delete" onClick={() => handleDelete(contact.id)}>DELETE</button>
               </td>
-              <td><button onClick={() => handleDelete(contact.id)}>DELETE</button></td>
             </tr>
           ))}
         </tbody>

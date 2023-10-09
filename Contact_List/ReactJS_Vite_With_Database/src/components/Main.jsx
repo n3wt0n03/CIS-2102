@@ -99,7 +99,7 @@ const Header = () => {
             <h1>Contact List</h1>
           </div>
 
-          <div id="contact-table">
+          <div id="contacts">
             <DisplayContacts contacts={contacts} fetchContacts={fetchContacts} setContacts={setContacts}/>
           </div>
         </section>

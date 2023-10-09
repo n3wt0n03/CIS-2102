@@ -1,140 +1,140 @@
 :root {
-    --dark: #374151;
-    --darker: #1f2937;
-    --darkest: #111827;
-    --gray: #6b7280;
-    --light: #eee;
-    --pink: #ec4899;
-    --purple: #8b5cf6;
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: "Fira sans", sans-serif;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background: var(--dark);
-    color: white;
-  }
-  
-  header {
-    padding: 2rem 1rem;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    font-size: 2.5rem;
-    font-weight: 300;
-    color: var(--gray);
-    margin-bottom: 1rem;
-  }
-  
-  .title h1 {
-    margin: 0 auto;
-    padding: 2rem 1rem;
-    max-width: 800px;
-    width: 100%;
-    font-size: 2.5rem;
-    font-weight: 300;
-    color: var(--gray);
-  }
-  
-  input,
-  button {
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-  }
-  
-  #lastname-input,
-  #firstname-input,
-  #email-input,
-  #number-input {
-    flex: 1 1 0%;
-    background-color: var(--darker);
-    padding: 1rem;
-    border-radius: 0.3rem;
-    margin-right: 1rem;
-    color: var(--light);
-    font-size: 1.25rem;
-  }
-  
-  #number-input::-webkit-inner-spin-button,
-  #number-input::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 0;
-  }
-  
-  #new-contact-input::placeholder {
-    color: var(--gray);
-  }
-  
-  #new-contact-submit {
-    color: var(--pink);
-    font-size: 1.2rem;
-    font-weight: 700;
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-    transition: 0.4s;
-  }
-  
-  #contacts {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  table::hover {
-    cursor: pointer;
-  }
-  
-  #contacts td,
-  #contacts th {
-    padding: 8px;
-  }
-  
-  #contacts th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: var(--darker);
-    color: white;
-  }
-  
-  #contacts input {
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-    color: white;
-  }
-  
-  button {
-    background-color: #4caf50; /* Green */
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-  }
-  
-  button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-      0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  #delete {
-    background-color: crimson;
-  }
-  
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --gray: #6b7280;
+  --light: #eee;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Fira sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--dark);
+  color: white;
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+.title h1 {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--gray);
+  text-align: center;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#lastname-input,
+#firstname-input,
+#email-input,
+#number-input {
+  flex: 1 1 0%;
+  background-color: var(--darker);
+  padding: 1rem;
+  border-radius: 0.3rem;
+  margin-right: 1rem;
+  color: var(--light);
+  font-size: 1.25rem;
+}
+
+#number-input::-webkit-inner-spin-button,
+#number-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+#new-contact-input::placeholder {
+  color: var(--gray);
+}
+
+#new-contact-submit {
+  color: var(--pink);
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#contacts {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table::hover {
+  cursor: pointer;
+}
+
+#contacts td,
+#contacts th {
+  padding: 8px;
+}
+
+#contacts th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: var(--darker);
+  color: white;
+}
+
+#contacts input {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+}
+
+button {
+  background-color: #4caf50; /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#delete {
+  background-color: crimson;
+}
